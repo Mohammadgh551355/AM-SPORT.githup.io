@@ -1,0 +1,61 @@
+body {
+    background: url("img/توپ.png") no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+	font-family:"B Koodak";
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* لایه تیره برای خوانایی بهتر متن */
+    z-index: -1;
+
+}
+.p1{
+	font-size:50px;
+	color:#ffff08;
+	text-align:center;
+}
+table
+{
+		width:100%;
+}
+.td1
+{
+		width:50px;
+			
+
+}
+.ag{
+	width:500px;
+	text-align:center;
+}
+.h{
+	width:1300px;
+	text-align:center;
+}
+a {
+         color: #ffff08;
+		 text-decoration:none;
+    }
+	p{
+		color:#ffff08;
+		
+	}
+	.p5{
+		text-align:center;
+			color:#ffff08;
+			font-size:25px;
+	}
+   .p6{
+		text-align:center;
+			color:#ffff08;
+			font-size:20px;
+	}

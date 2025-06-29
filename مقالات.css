@@ -1,0 +1,23 @@
+body{
+	    background: url("img/توپ.png") no-repeat fixed;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+	font-family:"B Koodak";
+color:;
+.h2{
+	color:;
+}
+h2{
+	color:#ffff08;
+}
+h1{
+	color:#ffff08;
+}
+p{
+	color:#ffff08;
+	font-size:20px;
+}
+}

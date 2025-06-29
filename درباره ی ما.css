@@ -1,0 +1,61 @@
+body {
+    background-image: url("img/images.jfif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    transition: background-color 0.5s ease;
+	font-family:"Aldhabi"
+}
+
+body:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: overlay;
+}
+
+
+.am {
+    font-size: 24px;
+    color: #ffff08;
+    text-align: center;
+    max-width: 800px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(255, 255, 0, 0.3);
+    backdrop-filter: blur(5px);
+    border: 1px solid #ffff08;
+    animation: fadeIn 2s ease, glow 3s infinite alternate;
+    line-height: 1.8;
+}
+
+.am:hover {
+    transform: scale(1.02);
+    box-shadow: 0 15px 30px rgba(255, 255, 0, 0.5);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glow {
+    from { box-shadow: 0 0 10px rgba(255, 255, 0, 0.3); }
+    to { box-shadow: 0 0 20px rgba(255, 255, 0, 0.7); }
+}
+.td{
+	vertical-align:top;
+	
+}
+.b1{
+	width: 50px;
+}
+.l{
+	vertical-align:bottom;;
+}

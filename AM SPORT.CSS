@@ -1,0 +1,273 @@
+body {
+	
+    background-image: url("img/images.jfif");
+    background-repeat: no-repeat;
+    background-size:1700px;
+    background-position: left top;
+	margin: 0;
+
+	
+}
+
+table {
+    width: 100%;
+}
+
+.maintable {
+    width: 100%;
+    height: 100%;
+}
+
+.tableheader {
+    height: 120px;
+}
+
+.tablemain {
+    vertical-align: top;
+    display: flex; /* اختیاری */
+    justify-content: center; /* اختیاری */
+}
+
+.tablefooter {
+    height: 50px;
+    font-size: 30px;
+}
+
+.h1 {
+    color: #ffff08;
+    font-size: 60px;
+    text-align: center; /* اصلاح align:center نادرست */
+}
+.h22{
+	color:#FFFFFF;
+	text-align: center;
+	padding-bottom:60px;
+}
+
+.menu {
+    text-align: center;
+    width: 33%;
+    margin: 0 auto;
+}
+.header1{
+	color:#FFFFFF;
+	font-size:30px;
+	text-align:center;
+	 vertical-align:top;
+}
+.r{
+	font-size:20px;
+}
+
+.header {
+    text-align: center;
+    vertical-align: top;
+    color:#1e2eb8;
+    font-size: 80px;
+    width: 98%;
+	font-family:"Algerian"
+}
+
+h2 {
+    color: #ffff08;
+    font-size: 30px;
+}
+
+.am-img {
+    text-align: right;
+}
+
+.a {
+    color: #ffff08;
+    font-size: 20px;
+}
+
+.footer {
+    background-color: #FFFFFF;
+}
+
+.p-f {
+    text-align: center;
+    vertical-align: bottom;
+    width: 33%;
+    ;
+	background-color:#ffffff;
+}
+
+.d{
+
+}
+.s {
+    display: flex;
+}
+
+.ا {
+    width: 500px;
+}
+.sport{
+	color:#cf2391;
+}
+/* انیمیشن های جدید - بدون نیاز به تغییر HTML */
+.header {
+    animation: fadeInDown 0.8s ease-out;
+}
+
+.site-title .highlight {
+    animation: colorPulse 2s infinite alternate;
+}
+
+.nav-link img {
+    animation: bounce 2s infinite;
+}
+
+.card {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.footer {
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* تعریف انیمیشن ها */
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes colorPulse {
+    0% {
+        color: #ffff08;
+        text-shadow: 0 0 5px rgba(255,255,0,0.5);
+    }
+    100% {
+        color: #ff7e5f;
+        text-shadow: 0 0 15px rgba(255,126,95,0.8);
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* انیمیشن برای صفحات دیگر */
+.p1 {
+    animation: textFocusIn 1s ease-out;
+}
+
+img:not(.logo img) {
+    animation: zoomIn 0.8s ease-out;
+}
+
+@keyframes textFocusIn {
+    0% {
+        filter: blur(5px);
+        opacity: 0;
+    }
+    100% {
+        filter: blur(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+/* ==================== */
+/* انیمیشن های حرفه‌ای دکمه */
+/* ==================== */
+
+/* پایه‌گذاری انتقال‌ها */
+.menu, .menu-item, .nav-link, .card, .p1 {
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) !important;
+}
+
+/* افکت حرکت سه‌بعدی */
+.menu:hover, .menu-item:hover, .nav-link:hover {
+    transform: translateY(-5px) scale(1.05) !important;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2) !important;
+    filter: brightness(1.1) !important;
+}
+
+/* پالس نورانی */
+@keyframes pulse-gold {
+    0% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0.7); }
+    70% { box-shadow: 0 0 0 12px rgba(255, 215, 0, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 215, 0, 0); }
+}
+
+.menu:hover::after, 
+.menu-item:hover::after, 
+.nav-link:hover::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 8px;
+    animation: pulse-gold 1.5s infinite !important;
+    z-index: -1;
+}
+
+/* گرادینت متحرک */
+@keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.menu:hover, .menu-item:hover {
+    background: linear-gradient(45deg, #ff7e5f, #feb47b) !important;
+    background-size: 200% 200% !important;
+    animation: gradient-shift 3s ease infinite !important;
+}
+
+/* چرخش آیکون‌ها */
+@keyframes spin-icon {
+    0% { transform: rotate(0deg) scale(1); }
+    50% { transform: rotate(180deg) scale(1.2); }
+    100% { transform: rotate(360deg) scale(1); }
+}
+
+.menu img:hover, 
+.nav-link img:hover {
+    animation: spin-icon 1s ease !important;
+}
